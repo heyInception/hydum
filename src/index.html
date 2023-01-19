@@ -4,19 +4,17 @@
 @include('partials/head.html')
 
 <body class="page__body">
-  <div class="site-container">
-    @include('partials/header.html')
-    <main class="main">
-      <picture>
-        <source srcset="img/cover.avif" type="image/avif">
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="" class="image" width="300" height="300" alt="">
-      </picture>
-    </main>
+    <div class="site-container">
+        @include('partials/header.html')
+        <main class="main">
+            @include('partials/hero.html') @include('partials/adv.html') @include('partials/catalog-block.html') @include('partials/about.html') @include('partials/cloud.html') @include('partials/gallery.html') @include('partials/form.html') @include('partials/faq.html')
+            @include('partials/seo.html')
+        </main>
 
-    @include('partials/footer.html')
-    
-  </div>
+        @include('partials/footer.html')
+
+    </div>
+    <script type="text/javascript" src="https://codegena.com/assets/js/youtube-embed.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+    <div class="site-container">
+        @include('partials/header.html')
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__row">
+                    <div class="breadcrumbs__link breadcrumbs__link_grey">Главная</div>
+                    <span>/</span>
+                    <div class="breadcrumbs__link breadcrumbs__link_grey">Каталог</div>
+                    <span>/</span>
+                    <div class="breadcrumbs__link breadcrumbs__link_grey">УЗИ аппараты</div>
+                    <span>/</span>
+                    <div class="breadcrumbs__link">GE Logiq E9 XDclear</div>
+                </div>
+            </div>
+        </div>
+        <main class="main">
+            @include('partials/products/product.html') @include('partials/form.html') @include('partials/faq.html') @include('partials/seo.html')
+        </main>
+
+        @include('partials/footer.html')
+
+    </div>
+</body>
+
+</html>

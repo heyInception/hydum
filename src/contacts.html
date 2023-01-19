@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+    <div class="site-container">
+        @include('partials/header.html')
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__row">
+                    <div class="breadcrumbs__link breadcrumbs__link_grey">Главная</div>
+                    <span>/</span>
+                    <div class="breadcrumbs__link">Контакты</div>
+                </div>
+            </div>
+        </div>
+        <main class="main">
+            @include('partials/contacts.html')
+        </main>
+
+        @include('partials/footer.html')
+
+    </div>
+    <script type="text/javascript" src="https://codegena.com/assets/js/youtube-embed.js"></script>
+</body>
+
+</html>
