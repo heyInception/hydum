@@ -1,0 +1,101 @@
+.faq {
+    background: url(../../img/cat-block-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 50px 0;
+        gap: 35px;
+    }
+    &__column {
+        display: flex;
+        flex-flow: column;
+    }
+    &__title {
+        color: #FF671F;
+        h3 {
+            margin: 0;
+        }
+    }
+    &__accordion {
+        display: flex;
+        flex-flow: column;
+        gap: 4px;
+    }
+    &__item {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        -webkit-transition: 0.4s linear;
+        -o-transition: 0.4s linear;
+        transition: 0.4s linear;
+        &.selected {
+            background: #F8F9F8;
+            border-radius: 10px;
+            p {
+                color: #515155;
+                margin: 0;
+                padding: 0;
+            }
+            p {
+                padding-right: 31px;
+            }
+            .faq__content {
+                margin-bottom: 20px;
+                visibility: visible;
+                padding: 9px 84px;
+            }
+            .faq__item {
+                gap: 16px;
+            }
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &__head {
+        display: flex;
+        flex-flow: row;
+        gap: 30px;
+        -webkit-transition: 0.4s linear;
+        -o-transition: 0.4s linear;
+        transition: 0.4s linear;
+        cursor: pointer;
+        background: #F8F9F8;
+        border-radius: 10px;
+        padding: 9px 36px;
+        span {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            color: #172B39;
+        }
+        svg {
+            transition: linear .2s;
+        }
+    }
+    &__content {
+        -webkit-transition: 0.2s linear;
+        -o-transition: 0.2s linear;
+        transition: 0.2s linear;
+        visibility: hidden;
+        padding: 9px 84px;
+        p {
+            color: #515155;
+        }
+    }
+}
+
+.imgs {
+    display: flex;
+    flex-flow: row;
+    &__img {
+        flex: 1 0 0;
+        img {
+            width: 100%;
+            height: 390px;
+        }
+    }
+}

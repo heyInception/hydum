@@ -3,14 +3,20 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
-
 // подключения компонентов страницы
 @import "./components/header";
-
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+@import "./components/hero";
+@import "./components/adv";
+@import "./components/catalog-block";
+@import "./components/about-home";
+@import "./components/cloud";
+@import "./components/gallery";
+@import "./components/form";
+@import "./components/faq";
+@import "./components/seo";
+@import "./components/footer";
+@import "./components/single-product";
+@import "./components/about";
+@import "./components/contacts";
+@import "./components/products";
+@import "./components/media";

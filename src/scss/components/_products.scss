@@ -1,0 +1,189 @@
+.products {
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 30px;
+        margin: 50px 0;
+    }
+    &__column {
+        display: flex;
+        flex-flow: column;
+        flex: 1 0 0;
+        &_aside {
+            flex: 0 0 22.5%;
+            gap: 35px;
+            .sidebar__inner {
+                position: sticky;
+                top: 0;
+            }
+        }
+    }
+    &__title {
+        color: #172B39;
+        h1 {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 120%;
+            margin: 0;
+        }
+    }
+    &__top {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 22px;
+    }
+    &__span {
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #8C979F;
+        }
+        &_sort {}
+    }
+    &__middle {}
+    &__bottom {
+        margin-top: 48px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.custom-checkbox {
+    &__field {}
+    &__content {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #172B39;
+    }
+}
+
+.product-home {
+    &__cards {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 30px;
+    }
+    &__card {
+        background: #FFFFFF;
+        border: 1px solid #DFE1E8;
+        border-radius: 10px;
+        padding: 18px 15px;
+        flex: 0 0 23%;
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        transition: linear .3s;
+        height: max-content;
+        position: relative;
+        &:hover {
+            box-shadow: 0px 4px 21px rgba(35, 121, 193, 0.16);
+            &>.product-home__content {
+                max-height: 1000px;
+                transition: max-height 1.2s ease-in-out;
+                span {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            display: block;
+            width: auto;
+            height: 232px;
+            object-fit: fill;
+            object-position: center center;
+        }
+    }
+    &__category {
+        margin-top: 4px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 130.5%;
+        color: #8C979F
+    }
+    &__head {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        color: #3C3C40;
+    }
+    &__price {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        span {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+            color: #FF671F;
+        }
+    }
+    &__buttons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        transition: linear .3s;
+    }
+    &__btn {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        border-radius: 4px;
+        height: 42px;
+        padding: 0 15px;
+        border: 1px solid #FF671F;
+        color: #FF671F;
+        transition: linear .2s;
+        &_blue {
+            background: #FF671F;
+            color: #FFFFFF;
+            &:hover {
+                background: transparent;
+                border: 1px solid #FF671F;
+                color: #FF671F;
+            }
+        }
+    }
+    &__list {
+        background: url(../../img/product-card-price-list.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        flex: 1 0 23%;
+        padding: 30px 18px;
+        gap: 19px;
+        display: flex;
+        flex-flow: column;
+        height: 469px;
+    }
+    &__list-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+    &__list-subtitle {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+    &__list-btn {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #258DE5;
+        background-color: #fff;
+        padding: 0 23px;
+        height: 40px;
+        border-radius: 61px;
+    }
+}

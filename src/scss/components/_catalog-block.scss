@@ -1,0 +1,183 @@
+.catalog-home {
+    background: url(../../img/cat-block-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__row {
+        padding: 50px 0 75px;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 22px;
+    }
+    &__title {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        color: #258DE5;
+        h2 {
+            margin: 0;
+        }
+        a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FF671F;
+        }
+    }
+    &__wrap {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 25px;
+    }
+    &__column {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 25px;
+        &:last-child {
+            flex: 1 0 0;
+        }
+    }
+    &__main {
+        background: #FF671F;
+        box-shadow: 0px 4px 21px rgba(163, 188, 208, 0.29);
+        padding: 29px 30px;
+        max-width: 384px;
+        .nav {
+            &__list {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex-flow: column;
+                gap: 25px;
+            }
+            &__item {}
+            &__link {}
+            li {
+                position: relative;
+                &:last-child::after {
+                    content: none;
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: #fff;
+                    bottom: -13px;
+                    left: 0;
+                }
+            }
+            a {
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 120%;
+                color: #fff;
+                text-transform: uppercase;
+                display: grid;
+                grid-template-columns: repeat(0, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 25px;
+                svg {
+                    grid-area: 1 / 1 / 2 / 2;
+                }
+                span {
+                    grid-area: 1 / 2 / 2 / 13;
+                }
+            }
+        }
+    }
+    &__col-9 {
+        flex: 9 0 60%;
+    }
+    &__bg {
+        background: #F8F8F8;
+        border: 1px solid #F8F8F8;
+        padding: 28px;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 100%;
+        &:hover {
+            span {
+                color: #FF671F;
+            }
+        }
+        span {
+            max-width: 252px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 120%;
+            display: flex;
+            color: #3D3333;
+            transition: linear .2s;
+        }
+        &_1 {
+            background-image: url(../../img/cat-bg-1.png);
+        }
+        &_2 {
+            background-image: url(../../img/cat-bg-2.png);
+        }
+        &_3 {
+            background-image: url(../../img/cat-bg-3.png);
+        }
+        &_4 {
+            background-image: url(../../img/cat-bg-4.png);
+        }
+    }
+    &__col-3 {
+        flex: 3 0 30%;
+    }
+    &__col-6 {
+        flex: 6 0 0;
+    }
+    &__button {
+        display: none;
+    }
+}
+
+.price {
+    background: #F8F9F8;
+    &_orange {
+        background: #FF671F;
+    }
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45px 0 31px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 130%;
+        color: #333333;
+        &_orange {
+            color: #FFFFFF;
+        }
+    }
+    &__btn {
+        background: #FF671F;
+        border-radius: 4px;
+        height: 54px;
+        padding: 0 71px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        transition: linear .4s;
+        &:hover {
+            background: #EC5C19;
+        }
+        &_orange {
+            background: #FFFFFF;
+            color: #FF671F;
+            transition: linear .4s;
+            &:hover {
+                background: #F2F2F2;
+            }
+        }
+    }
+}

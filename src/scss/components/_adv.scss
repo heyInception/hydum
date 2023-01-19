@@ -1,0 +1,38 @@
+.advatages {
+    background: #F8F9F8;
+    &__wrap {}
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 16px;
+        &_hidden {
+            display: none;
+        }
+        &:first-child {
+            padding-bottom: 35px;
+            padding-top: 35px;
+        }
+        &:last-child {
+            padding-bottom: 35px;
+        }
+    }
+    &__title {
+        color: #FF671F;
+        h3 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 134%;
+            font-variant: small-caps;
+            margin: 0;
+        }
+    }
+    &__column {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        flex: 1 0 0;
+        gap: 16px;
+    }
+    &__icon {}
+    &__text {}
+}

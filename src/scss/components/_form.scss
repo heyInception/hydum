@@ -1,0 +1,82 @@
+.form-home {
+    background-image: url(../../img/form-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 90px 0 140px;
+        width: 100%;
+    }
+    &__column {
+        display: flex;
+        flex-flow: column;
+        gap: 15px;
+        width: 100%;
+    }
+    &__title {
+        color: #FF671F;
+        padding-bottom: 30px;
+        h3 {
+            margin: 0;
+        }
+    }
+    &__subtitle {
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        padding-bottom: 30px;
+    }
+    &__form {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 18px;
+        input {
+            flex: 1 0 0;
+            background: transparent;
+            height: 54px;
+            border: 1px solid #FFFFFF;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            padding: 0 18px;
+            outline: none;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: #FFFFFF;
+            }
+            &[type=submit] {
+                background: #FF671F;
+                border: 1px solid #FF671F;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                cursor: pointer;
+                transition: linear .4s;
+                &:hover {
+                    background: #EC5C19;
+                    order: 1px solid #EC5C19;
+                }
+            }
+        }
+    }
+    &__check {
+        padding-top: 15px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+}
